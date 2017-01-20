@@ -407,3 +407,347 @@ I170120 17:07:43.174633 4131 sql/mon/mem_usage.go:510  [n1] txn: memory usage in
 I170120 17:07:51.847072 46 server/status/runtime.go:228  runtime stats: 56 MiB RSS, 74 goroutines, 12 MiB/4.6 MiB/27 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 104.86cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
 I170120 17:08:01.843009 46 server/status/runtime.go:228  runtime stats: 56 MiB RSS, 75 goroutines, 11 MiB/4.6 MiB/27 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 87.24cgo/sec, 0.02/0.00 %(u/s)time, 0.00 %gc (2x)
 I170120 17:08:11.843173 46 server/status/runtime.go:228  runtime stats: 56 MiB RSS, 75 goroutines, 12 MiB/5.2 MiB/28 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 89.20cgo/sec, 0.02/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:08:21.846842 44 gossip/gossip.go:437  [n1] gossip status (ok, 1 node)
+gossip client (0/3 cur/max conns)
+gossip server (0/3 cur/max conns, infos 0/0 sent/received, bytes 0B/0B sent/received)
+I170120 17:08:21.847010 46 server/status/runtime.go:228  runtime stats: 57 MiB RSS, 75 goroutines, 9.9 MiB/7.8 MiB/28 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 78.57cgo/sec, 0.02/0.00 %(u/s)time, 0.00 %gc (2x)
+E170120 17:08:21.847103 24 storage/queue.go:610  [replicate,n1,s1,r1/1:/{Min-Table/11},@c42030c000] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:08:21.847909 24 storage/queue.go:610  [replicate,n1,s1,r22/1:/Table/5{1-2},@c42030d500] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:08:21.848556 24 storage/queue.go:610  [replicate,n1,s1,r5/1:/Table/{14-50},@c42030cf00] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:08:21.849410 24 storage/queue.go:610  [replicate,n1,s1,r31/1:/{Table/52-Max},@c420ef8600] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:08:21.850124 24 storage/queue.go:610  [replicate,n1,s1,r3/1:/Table/1{2-3},@c42030c900] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:08:21.850693 24 storage/queue.go:610  [replicate,n1,s1,r21/1:/Table/5{0-1},@c42030d200] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:08:21.851292 24 storage/queue.go:610  [replicate,n1,s1,r2/1:/Table/1{1-2},@c42030c600] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:08:21.851817 24 storage/queue.go:610  [replicate,n1,s1,r4/1:/Table/1{3-4},@c42030cc00] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+I170120 17:08:31.843985 46 server/status/runtime.go:228  runtime stats: 58 MiB RSS, 75 goroutines, 9.6 MiB/7.9 MiB/28 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 98.73cgo/sec, 0.04/0.00 %(u/s)time, 0.00 %gc (2x)
+I170120 17:08:41.844941 46 server/status/runtime.go:228  runtime stats: 58 MiB RSS, 75 goroutines, 12 MiB/5.7 MiB/28 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 77.99cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:08:51.843283 46 server/status/runtime.go:228  runtime stats: 58 MiB RSS, 75 goroutines, 9.9 MiB/7.9 MiB/28 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 70.91cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (2x)
+I170120 17:09:01.843302 46 server/status/runtime.go:228  runtime stats: 58 MiB RSS, 75 goroutines, 11 MiB/7.0 MiB/28 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 80.30cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:09:11.843048 46 server/status/runtime.go:228  runtime stats: 58 MiB RSS, 75 goroutines, 7.2 MiB/11 MiB/28 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 77.40cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (2x)
+I170120 17:09:21.846282 44 gossip/gossip.go:437  [n1] gossip status (ok, 1 node)
+gossip client (0/3 cur/max conns)
+gossip server (0/3 cur/max conns, infos 0/0 sent/received, bytes 0B/0B sent/received)
+I170120 17:09:21.846456 46 server/status/runtime.go:228  runtime stats: 58 MiB RSS, 75 goroutines, 11 MiB/6.1 MiB/28 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 71.78cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+E170120 17:09:21.847409 24 storage/queue.go:610  [replicate,n1,s1,r2/1:/Table/1{1-2},@c42030c600] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:09:21.848066 24 storage/queue.go:610  [replicate,n1,s1,r4/1:/Table/1{3-4},@c42030cc00] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:09:21.848137 24 storage/queue.go:610  [replicate,n1,s1,r1/1:/{Min-Table/11},@c42030c000] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:09:21.848700 24 storage/queue.go:610  [replicate,n1,s1,r22/1:/Table/5{1-2},@c42030d500] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:09:21.849345 24 storage/queue.go:610  [replicate,n1,s1,r5/1:/Table/{14-50},@c42030cf00] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:09:21.849815 24 storage/queue.go:610  [replicate,n1,s1,r31/1:/{Table/52-Max},@c420ef8600] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:09:21.850455 24 storage/queue.go:610  [replicate,n1,s1,r3/1:/Table/1{2-3},@c42030c900] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:09:21.851077 24 storage/queue.go:610  [replicate,n1,s1,r21/1:/Table/5{0-1},@c42030d200] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+I170120 17:09:31.844522 46 server/status/runtime.go:228  runtime stats: 59 MiB RSS, 75 goroutines, 14 MiB/3.7 MiB/28 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 97.82cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:09:41.843646 46 server/status/runtime.go:228  runtime stats: 59 MiB RSS, 74 goroutines, 9.9 MiB/7.6 MiB/28 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 117.11cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (2x)
+I170120 17:09:51.847305 46 server/status/runtime.go:228  runtime stats: 59 MiB RSS, 74 goroutines, 12 MiB/6.4 MiB/28 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 70.37cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:10:01.843240 46 server/status/runtime.go:228  runtime stats: 59 MiB RSS, 74 goroutines, 8.5 MiB/7.9 MiB/28 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 77.83cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (2x)
+I170120 17:10:11.843150 46 server/status/runtime.go:228  runtime stats: 59 MiB RSS, 74 goroutines, 8.7 MiB/9.1 MiB/28 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 69.30cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:10:21.843137 44 gossip/gossip.go:437  [n1] gossip status (ok, 1 node)
+gossip client (0/3 cur/max conns)
+gossip server (0/3 cur/max conns, infos 0/0 sent/received, bytes 0B/0B sent/received)
+I170120 17:10:21.843280 46 server/status/runtime.go:228  runtime stats: 59 MiB RSS, 74 goroutines, 11 MiB/5.7 MiB/28 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 70.70cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+E170120 17:10:21.844198 24 storage/queue.go:610  [replicate,n1,s1,r21/1:/Table/5{0-1},@c42030d200] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:10:21.845032 24 storage/queue.go:610  [replicate,n1,s1,r2/1:/Table/1{1-2},@c42030c600] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:10:21.845651 24 storage/queue.go:610  [replicate,n1,s1,r4/1:/Table/1{3-4},@c42030cc00] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:10:21.845724 24 storage/queue.go:610  [replicate,n1,s1,r1/1:/{Min-Table/11},@c42030c000] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:10:21.846318 24 storage/queue.go:610  [replicate,n1,s1,r22/1:/Table/5{1-2},@c42030d500] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:10:21.846913 24 storage/queue.go:610  [replicate,n1,s1,r5/1:/Table/{14-50},@c42030cf00] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:10:21.847372 24 storage/queue.go:610  [replicate,n1,s1,r31/1:/{Table/52-Max},@c420ef8600] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:10:21.847839 24 storage/queue.go:610  [replicate,n1,s1,r3/1:/Table/1{2-3},@c42030c900] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+I170120 17:10:31.847441 46 server/status/runtime.go:228  runtime stats: 59 MiB RSS, 74 goroutines, 7.7 MiB/9.8 MiB/28 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 107.55cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (2x)
+I170120 17:10:41.844209 46 server/status/runtime.go:228  runtime stats: 59 MiB RSS, 74 goroutines, 10 MiB/7.4 MiB/28 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 76.32cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:10:51.846061 46 server/status/runtime.go:228  runtime stats: 59 MiB RSS, 74 goroutines, 12 MiB/5.7 MiB/28 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 70.69cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:11:01.846441 46 server/status/runtime.go:228  runtime stats: 59 MiB RSS, 74 goroutines, 7.7 MiB/10 MiB/28 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 76.30cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (2x)
+I170120 17:11:11.846339 46 server/status/runtime.go:228  runtime stats: 59 MiB RSS, 74 goroutines, 10 MiB/6.4 MiB/28 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 80.70cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:11:21.845368 44 gossip/gossip.go:437  [n1] gossip status (ok, 1 node)
+gossip client (0/3 cur/max conns)
+gossip server (0/3 cur/max conns, infos 0/0 sent/received, bytes 0B/0B sent/received)
+I170120 17:11:21.845493 46 server/status/runtime.go:228  runtime stats: 60 MiB RSS, 74 goroutines, 8.7 MiB/9.5 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 78.71cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (2x)
+E170120 17:11:21.846571 24 storage/queue.go:610  [replicate,n1,s1,r3/1:/Table/1{2-3},@c42030c900] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:11:21.847210 24 storage/queue.go:610  [replicate,n1,s1,r21/1:/Table/5{0-1},@c42030d200] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:11:21.847828 24 storage/queue.go:610  [replicate,n1,s1,r2/1:/Table/1{1-2},@c42030c600] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:11:21.848437 24 storage/queue.go:610  [replicate,n1,s1,r4/1:/Table/1{3-4},@c42030cc00] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:11:21.848508 24 storage/queue.go:610  [replicate,n1,s1,r1/1:/{Min-Table/11},@c42030c000] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:11:21.849118 24 storage/queue.go:610  [replicate,n1,s1,r22/1:/Table/5{1-2},@c42030d500] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:11:21.849625 24 storage/queue.go:610  [replicate,n1,s1,r5/1:/Table/{14-50},@c42030cf00] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:11:21.850110 24 storage/queue.go:610  [replicate,n1,s1,r31/1:/{Table/52-Max},@c420ef8600] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+I170120 17:11:31.847142 46 server/status/runtime.go:228  runtime stats: 60 MiB RSS, 74 goroutines, 10 MiB/8.3 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 95.18cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:11:41.843119 46 server/status/runtime.go:228  runtime stats: 60 MiB RSS, 74 goroutines, 13 MiB/6.1 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 77.23cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:11:51.843050 46 server/status/runtime.go:228  runtime stats: 60 MiB RSS, 74 goroutines, 9.2 MiB/9.2 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 69.00cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (2x)
+I170120 17:12:01.843401 46 server/status/runtime.go:228  runtime stats: 60 MiB RSS, 74 goroutines, 9.6 MiB/8.6 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 80.70cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:12:11.847571 46 server/status/runtime.go:228  runtime stats: 60 MiB RSS, 74 goroutines, 13 MiB/5.2 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 77.77cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:12:21.843065 44 gossip/gossip.go:437  [n1] gossip status (ok, 1 node)
+gossip client (0/3 cur/max conns)
+gossip server (0/3 cur/max conns, infos 0/0 sent/received, bytes 0B/0B sent/received)
+I170120 17:12:21.843182 46 server/status/runtime.go:228  runtime stats: 60 MiB RSS, 74 goroutines, 13 MiB/5.6 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 70.73cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+E170120 17:12:21.843332 24 storage/queue.go:610  [replicate,n1,s1,r1/1:/{Min-Table/11},@c42030c000] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:12:21.844212 24 storage/queue.go:610  [replicate,n1,s1,r22/1:/Table/5{1-2},@c42030d500] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:12:21.844891 24 storage/queue.go:610  [replicate,n1,s1,r5/1:/Table/{14-50},@c42030cf00] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:12:21.845524 24 storage/queue.go:610  [replicate,n1,s1,r31/1:/{Table/52-Max},@c420ef8600] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:12:21.846122 24 storage/queue.go:610  [replicate,n1,s1,r3/1:/Table/1{2-3},@c42030c900] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:12:21.846554 24 storage/queue.go:610  [replicate,n1,s1,r21/1:/Table/5{0-1},@c42030d200] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:12:21.847040 24 storage/queue.go:610  [replicate,n1,s1,r2/1:/Table/1{1-2},@c42030c600] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:12:21.847464 24 storage/queue.go:610  [replicate,n1,s1,r4/1:/Table/1{3-4},@c42030cc00] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+I170120 17:12:31.847294 46 server/status/runtime.go:228  runtime stats: 60 MiB RSS, 74 goroutines, 9.3 MiB/9.3 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 124.05cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (2x)
+I170120 17:12:41.846633 46 server/status/runtime.go:228  runtime stats: 60 MiB RSS, 74 goroutines, 7.5 MiB/11 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 80.71cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (2x)
+I170120 17:12:51.846685 46 server/status/runtime.go:228  runtime stats: 60 MiB RSS, 74 goroutines, 10 MiB/7.6 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 77.20cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:13:01.846300 46 server/status/runtime.go:228  runtime stats: 60 MiB RSS, 74 goroutines, 9.4 MiB/8.7 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 77.80cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (2x)
+I170120 17:13:11.844524 46 server/status/runtime.go:228  runtime stats: 60 MiB RSS, 74 goroutines, 9.5 MiB/9.2 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 74.81cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:13:21.843691 44 gossip/gossip.go:437  [n1] gossip status (ok, 1 node)
+gossip client (0/3 cur/max conns)
+gossip server (0/3 cur/max conns, infos 0/0 sent/received, bytes 0B/0B sent/received)
+I170120 17:13:21.843772 46 server/status/runtime.go:228  runtime stats: 60 MiB RSS, 74 goroutines, 12 MiB/5.9 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 77.21cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+E170120 17:13:21.844317 24 storage/queue.go:610  [replicate,n1,s1,r22/1:/Table/5{1-2},@c42030d500] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:13:21.844667 24 storage/queue.go:610  [replicate,n1,s1,r5/1:/Table/{14-50},@c42030cf00] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:13:21.845032 24 storage/queue.go:610  [replicate,n1,s1,r31/1:/{Table/52-Max},@c420ef8600] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:13:21.845440 24 storage/queue.go:610  [replicate,n1,s1,r3/1:/Table/1{2-3},@c42030c900] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:13:21.845798 24 storage/queue.go:610  [replicate,n1,s1,r21/1:/Table/5{0-1},@c42030d200] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:13:21.846190 24 storage/queue.go:610  [replicate,n1,s1,r2/1:/Table/1{1-2},@c42030c600] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:13:21.846537 24 storage/queue.go:610  [replicate,n1,s1,r4/1:/Table/1{3-4},@c42030cc00] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:13:21.846575 24 storage/queue.go:610  [replicate,n1,s1,r1/1:/{Min-Table/11},@c42030c000] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+I170120 17:13:31.845128 46 server/status/runtime.go:228  runtime stats: 60 MiB RSS, 74 goroutines, 8.5 MiB/9.7 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 109.09cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (2x)
+I170120 17:13:41.843653 46 server/status/runtime.go:228  runtime stats: 60 MiB RSS, 74 goroutines, 11 MiB/7.6 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 77.21cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:13:51.845455 46 server/status/runtime.go:228  runtime stats: 60 MiB RSS, 74 goroutines, 12 MiB/7.3 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 74.79cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:14:01.844680 46 server/status/runtime.go:228  runtime stats: 60 MiB RSS, 74 goroutines, 8.1 MiB/10 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 69.30cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (2x)
+I170120 17:14:11.844521 46 server/status/runtime.go:228  runtime stats: 60 MiB RSS, 74 goroutines, 11 MiB/7.0 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 83.10cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:14:21.845125 44 gossip/gossip.go:437  [n1] gossip status (ok, 1 node)
+gossip client (0/3 cur/max conns)
+gossip server (0/3 cur/max conns, infos 0/0 sent/received, bytes 0B/0B sent/received)
+I170120 17:14:21.845292 46 server/status/runtime.go:228  runtime stats: 60 MiB RSS, 74 goroutines, 13 MiB/5.8 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 74.79cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+E170120 17:14:21.846226 24 storage/queue.go:610  [replicate,n1,s1,r31/1:/{Table/52-Max},@c420ef8600] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:14:21.846846 24 storage/queue.go:610  [replicate,n1,s1,r3/1:/Table/1{2-3},@c42030c900] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:14:21.847441 24 storage/queue.go:610  [replicate,n1,s1,r21/1:/Table/5{0-1},@c42030d200] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:14:21.848058 24 storage/queue.go:610  [replicate,n1,s1,r2/1:/Table/1{1-2},@c42030c600] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:14:21.848636 24 storage/queue.go:610  [replicate,n1,s1,r4/1:/Table/1{3-4},@c42030cc00] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:14:21.848707 24 storage/queue.go:610  [replicate,n1,s1,r1/1:/{Min-Table/11},@c42030c000] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:14:21.849305 24 storage/queue.go:610  [replicate,n1,s1,r22/1:/Table/5{1-2},@c42030d500] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:14:21.849739 24 storage/queue.go:610  [replicate,n1,s1,r5/1:/Table/{14-50},@c42030cf00] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+I170120 17:14:31.846304 46 server/status/runtime.go:228  runtime stats: 60 MiB RSS, 74 goroutines, 8.6 MiB/9.3 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 103.19cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (2x)
+I170120 17:14:41.843488 46 server/status/runtime.go:228  runtime stats: 60 MiB RSS, 74 goroutines, 13 MiB/5.4 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 78.72cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:14:51.843071 46 server/status/runtime.go:228  runtime stats: 60 MiB RSS, 74 goroutines, 12 MiB/6.5 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 62.80cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:15:01.843912 46 server/status/runtime.go:228  runtime stats: 60 MiB RSS, 74 goroutines, 9.3 MiB/8.9 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 88.69cgo/sec, 0.02/0.00 %(u/s)time, 0.00 %gc (2x)
+I170120 17:15:11.843472 46 server/status/runtime.go:228  runtime stats: 60 MiB RSS, 74 goroutines, 12 MiB/6.3 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 102.71cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:15:21.843090 44 gossip/gossip.go:437  [n1] gossip status (ok, 1 node)
+gossip client (0/3 cur/max conns)
+gossip server (0/3 cur/max conns, infos 0/0 sent/received, bytes 0B/0B sent/received)
+I170120 17:15:21.843214 46 server/status/runtime.go:228  runtime stats: 60 MiB RSS, 74 goroutines, 6.5 MiB/12 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 77.20cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (2x)
+E170120 17:15:21.844191 24 storage/queue.go:610  [replicate,n1,s1,r31/1:/{Table/52-Max},@c420ef8600] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:15:21.844888 24 storage/queue.go:610  [replicate,n1,s1,r3/1:/Table/1{2-3},@c42030c900] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:15:21.845520 24 storage/queue.go:610  [replicate,n1,s1,r21/1:/Table/5{0-1},@c42030d200] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:15:21.846075 24 storage/queue.go:610  [replicate,n1,s1,r2/1:/Table/1{1-2},@c42030c600] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:15:21.846567 24 storage/queue.go:610  [replicate,n1,s1,r4/1:/Table/1{3-4},@c42030cc00] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:15:21.846621 24 storage/queue.go:610  [replicate,n1,s1,r1/1:/{Min-Table/11},@c42030c000] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:15:21.847093 24 storage/queue.go:610  [replicate,n1,s1,r22/1:/Table/5{1-2},@c42030d500] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:15:21.847557 24 storage/queue.go:610  [replicate,n1,s1,r5/1:/Table/{14-50},@c42030cf00] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+I170120 17:15:31.843246 46 server/status/runtime.go:228  runtime stats: 60 MiB RSS, 74 goroutines, 10 MiB/8.7 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 103.20cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:15:41.847305 46 server/status/runtime.go:228  runtime stats: 60 MiB RSS, 74 goroutines, 8.8 MiB/9.5 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 80.67cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (2x)
+I170120 17:15:51.847155 46 server/status/runtime.go:228  runtime stats: 60 MiB RSS, 74 goroutines, 11 MiB/7.5 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 70.20cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:16:01.845887 46 server/status/runtime.go:228  runtime stats: 60 MiB RSS, 74 goroutines, 12 MiB/6.2 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 76.31cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:16:11.845426 46 server/status/runtime.go:228  runtime stats: 60 MiB RSS, 74 goroutines, 11 MiB/7.4 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 69.80cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (2x)
+I170120 17:16:21.843262 44 gossip/gossip.go:437  [n1] gossip status (ok, 1 node)
+gossip client (0/3 cur/max conns)
+gossip server (0/3 cur/max conns, infos 0/0 sent/received, bytes 0B/0B sent/received)
+I170120 17:16:21.843424 46 server/status/runtime.go:228  runtime stats: 60 MiB RSS, 74 goroutines, 12 MiB/6.4 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 76.92cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+E170120 17:16:21.844323 24 storage/queue.go:610  [replicate,n1,s1,r3/1:/Table/1{2-3},@c42030c900] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:16:21.844982 24 storage/queue.go:610  [replicate,n1,s1,r21/1:/Table/5{0-1},@c42030d200] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:16:21.845601 24 storage/queue.go:610  [replicate,n1,s1,r2/1:/Table/1{1-2},@c42030c600] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:16:21.846239 24 storage/queue.go:610  [replicate,n1,s1,r4/1:/Table/1{3-4},@c42030cc00] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:16:21.846309 24 storage/queue.go:610  [replicate,n1,s1,r1/1:/{Min-Table/11},@c42030c000] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:16:21.846919 24 storage/queue.go:610  [replicate,n1,s1,r22/1:/Table/5{1-2},@c42030d500] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:16:21.847457 24 storage/queue.go:610  [replicate,n1,s1,r5/1:/Table/{14-50},@c42030cf00] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:16:21.848024 24 storage/queue.go:610  [replicate,n1,s1,r31/1:/{Table/52-Max},@c420ef8600] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:16:22.050688 24 storage/queue.go:677  [n1,replicate] 8 replicas failing with "0 of 1 store with an attribute matching []; likely not enough nodes in cluster"
+I170120 17:16:31.845064 46 server/status/runtime.go:228  runtime stats: 60 MiB RSS, 74 goroutines, 7.9 MiB/10 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 107.58cgo/sec, 0.02/0.00 %(u/s)time, 0.00 %gc (2x)
+I170120 17:16:41.844767 46 server/status/runtime.go:228  runtime stats: 60 MiB RSS, 74 goroutines, 11 MiB/7.3 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 77.80cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:16:51.847279 46 server/status/runtime.go:228  runtime stats: 60 MiB RSS, 74 goroutines, 9.1 MiB/8.4 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 77.18cgo/sec, 0.02/0.00 %(u/s)time, 0.00 %gc (2x)
+I170120 17:17:01.844386 46 server/status/runtime.go:228  runtime stats: 60 MiB RSS, 74 goroutines, 10 MiB/7.5 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 76.32cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:17:11.843101 46 server/status/runtime.go:228  runtime stats: 60 MiB RSS, 74 goroutines, 8.5 MiB/9.8 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 67.21cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:17:21.843170 44 gossip/gossip.go:437  [n1] gossip status (ok, 1 node)
+gossip client (0/3 cur/max conns)
+gossip server (0/3 cur/max conns, infos 0/0 sent/received, bytes 0B/0B sent/received)
+I170120 17:17:21.843287 46 server/status/runtime.go:228  runtime stats: 60 MiB RSS, 74 goroutines, 12 MiB/6.1 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 78.70cgo/sec, 0.02/0.00 %(u/s)time, 0.00 %gc (1x)
+E170120 17:17:21.844117 24 storage/queue.go:610  [replicate,n1,s1,r2/1:/Table/1{1-2},@c42030c600] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:17:21.844768 24 storage/queue.go:610  [replicate,n1,s1,r4/1:/Table/1{3-4},@c42030cc00] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:17:21.844841 24 storage/queue.go:610  [replicate,n1,s1,r1/1:/{Min-Table/11},@c42030c000] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:17:21.845448 24 storage/queue.go:610  [replicate,n1,s1,r22/1:/Table/5{1-2},@c42030d500] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:17:21.846066 24 storage/queue.go:610  [replicate,n1,s1,r5/1:/Table/{14-50},@c42030cf00] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:17:21.846666 24 storage/queue.go:610  [replicate,n1,s1,r31/1:/{Table/52-Max},@c420ef8600] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:17:21.847187 24 storage/queue.go:610  [replicate,n1,s1,r3/1:/Table/1{2-3},@c42030c900] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:17:21.847669 24 storage/queue.go:610  [replicate,n1,s1,r21/1:/Table/5{0-1},@c42030d200] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+I170120 17:17:31.847531 46 server/status/runtime.go:228  runtime stats: 60 MiB RSS, 74 goroutines, 8.0 MiB/11 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 101.66cgo/sec, 0.02/0.00 %(u/s)time, 0.00 %gc (2x)
+I170120 17:17:41.843575 46 server/status/runtime.go:228  runtime stats: 60 MiB RSS, 74 goroutines, 12 MiB/6.9 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 76.33cgo/sec, 0.02/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:17:51.847500 46 server/status/runtime.go:228  runtime stats: 60 MiB RSS, 74 goroutines, 8.5 MiB/10 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 77.77cgo/sec, 0.02/0.00 %(u/s)time, 0.00 %gc (2x)
+I170120 17:18:01.843312 46 server/status/runtime.go:228  runtime stats: 60 MiB RSS, 74 goroutines, 10 MiB/8.7 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 115.15cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:18:11.845515 46 server/status/runtime.go:228  runtime stats: 60 MiB RSS, 74 goroutines, 12 MiB/6.6 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 76.28cgo/sec, 0.02/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:18:21.843114 44 gossip/gossip.go:437  [n1] gossip status (ok, 1 node)
+gossip client (0/3 cur/max conns)
+gossip server (0/3 cur/max conns, infos 0/0 sent/received, bytes 0B/0B sent/received)
+I170120 17:18:21.843253 46 server/status/runtime.go:228  runtime stats: 61 MiB RSS, 74 goroutines, 8.0 MiB/11 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 69.32cgo/sec, 0.02/0.00 %(u/s)time, 0.00 %gc (2x)
+E170120 17:18:21.844342 24 storage/queue.go:610  [replicate,n1,s1,r2/1:/Table/1{1-2},@c42030c600] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:18:21.845647 24 storage/queue.go:610  [replicate,n1,s1,r4/1:/Table/1{3-4},@c42030cc00] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:18:21.845799 24 storage/queue.go:610  [replicate,n1,s1,r1/1:/{Min-Table/11},@c42030c000] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:18:21.847566 24 storage/queue.go:610  [replicate,n1,s1,r22/1:/Table/5{1-2},@c42030d500] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:18:21.848913 24 storage/queue.go:610  [replicate,n1,s1,r5/1:/Table/{14-50},@c42030cf00] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:18:21.849954 24 storage/queue.go:610  [replicate,n1,s1,r31/1:/{Table/52-Max},@c420ef8600] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:18:21.850694 24 storage/queue.go:610  [replicate,n1,s1,r3/1:/Table/1{2-3},@c42030c900] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:18:21.851507 24 storage/queue.go:610  [replicate,n1,s1,r21/1:/Table/5{0-1},@c42030d200] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+I170120 17:18:31.847525 46 server/status/runtime.go:228  runtime stats: 61 MiB RSS, 74 goroutines, 11 MiB/7.7 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 104.66cgo/sec, 0.02/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:18:41.843653 46 server/status/runtime.go:228  runtime stats: 61 MiB RSS, 74 goroutines, 8.7 MiB/9.8 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 80.13cgo/sec, 0.02/0.00 %(u/s)time, 0.00 %gc (2x)
+I170120 17:18:51.847640 46 server/status/runtime.go:228  runtime stats: 61 MiB RSS, 74 goroutines, 10 MiB/7.4 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 77.77cgo/sec, 0.02/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:19:01.843091 46 server/status/runtime.go:228  runtime stats: 61 MiB RSS, 74 goroutines, 13 MiB/5.0 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 76.33cgo/sec, 0.02/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:19:11.847350 46 server/status/runtime.go:228  runtime stats: 61 MiB RSS, 74 goroutines, 13 MiB/5.8 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 71.67cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:19:21.843553 44 gossip/gossip.go:437  [n1] gossip status (ok, 1 node)
+gossip client (0/3 cur/max conns)
+gossip server (0/3 cur/max conns, infos 0/0 sent/received, bytes 0B/0B sent/received)
+I170120 17:19:21.843688 46 server/status/runtime.go:228  runtime stats: 61 MiB RSS, 74 goroutines, 9.7 MiB/8.9 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 68.32cgo/sec, 0.02/0.00 %(u/s)time, 0.00 %gc (2x)
+E170120 17:19:21.843846 24 storage/queue.go:610  [replicate,n1,s1,r1/1:/{Min-Table/11},@c42030c000] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:19:21.844701 24 storage/queue.go:610  [replicate,n1,s1,r22/1:/Table/5{1-2},@c42030d500] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:19:21.845341 24 storage/queue.go:610  [replicate,n1,s1,r5/1:/Table/{14-50},@c42030cf00] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:19:21.845969 24 storage/queue.go:610  [replicate,n1,s1,r31/1:/{Table/52-Max},@c420ef8600] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:19:21.846601 24 storage/queue.go:610  [replicate,n1,s1,r3/1:/Table/1{2-3},@c42030c900] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:19:21.847219 24 storage/queue.go:610  [replicate,n1,s1,r21/1:/Table/5{0-1},@c42030d200] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:19:21.847715 24 storage/queue.go:610  [replicate,n1,s1,r2/1:/Table/1{1-2},@c42030c600] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:19:21.848202 24 storage/queue.go:610  [replicate,n1,s1,r4/1:/Table/1{3-4},@c42030cc00] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+I170120 17:19:31.843136 46 server/status/runtime.go:228  runtime stats: 61 MiB RSS, 74 goroutines, 10 MiB/7.9 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 115.01cgo/sec, 0.06/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:19:41.843187 46 server/status/runtime.go:228  runtime stats: 61 MiB RSS, 74 goroutines, 10 MiB/7.5 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 69.80cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:19:51.843317 46 server/status/runtime.go:228  runtime stats: 61 MiB RSS, 74 goroutines, 12 MiB/6.6 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 77.80cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:19:51.843408 43 storage/store.go:3897  [n1,s1] sstables (read amplification = 1):
+6 [ 624K 1 ]: 624K
+I170120 17:20:01.843226 46 server/status/runtime.go:228  runtime stats: 61 MiB RSS, 74 goroutines, 12 MiB/6.4 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 68.70cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:20:11.847471 46 server/status/runtime.go:228  runtime stats: 61 MiB RSS, 74 goroutines, 9.0 MiB/9.3 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 88.66cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (2x)
+I170120 17:20:21.843121 44 gossip/gossip.go:437  [n1] gossip status (ok, 1 node)
+gossip client (0/3 cur/max conns)
+gossip server (0/3 cur/max conns, infos 0/0 sent/received, bytes 0B/0B sent/received)
+I170120 17:20:21.843263 46 server/status/runtime.go:228  runtime stats: 61 MiB RSS, 74 goroutines, 11 MiB/7.3 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 69.23cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+E170120 17:20:21.844378 24 storage/queue.go:610  [replicate,n1,s1,r2/1:/Table/1{1-2},@c42030c600] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:20:21.845056 24 storage/queue.go:610  [replicate,n1,s1,r4/1:/Table/1{3-4},@c42030cc00] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:20:21.845180 24 storage/queue.go:610  [replicate,n1,s1,r1/1:/{Min-Table/11},@c42030c000] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:20:21.845729 24 storage/queue.go:610  [replicate,n1,s1,r22/1:/Table/5{1-2},@c42030d500] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:20:21.846210 24 storage/queue.go:610  [replicate,n1,s1,r5/1:/Table/{14-50},@c42030cf00] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:20:21.846769 24 storage/queue.go:610  [replicate,n1,s1,r31/1:/{Table/52-Max},@c420ef8600] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:20:21.847235 24 storage/queue.go:610  [replicate,n1,s1,r3/1:/Table/1{2-3},@c42030c900] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:20:21.847736 24 storage/queue.go:610  [replicate,n1,s1,r21/1:/Table/5{0-1},@c42030d200] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+I170120 17:20:31.846720 46 server/status/runtime.go:228  runtime stats: 61 MiB RSS, 74 goroutines, 12 MiB/6.6 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 103.17cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:20:41.845178 46 server/status/runtime.go:228  runtime stats: 61 MiB RSS, 74 goroutines, 10 MiB/7.6 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 113.12cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (2x)
+I170120 17:20:51.845157 46 server/status/runtime.go:228  runtime stats: 62 MiB RSS, 74 goroutines, 12 MiB/6.8 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 68.30cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:21:01.844173 46 server/status/runtime.go:228  runtime stats: 62 MiB RSS, 74 goroutines, 10 MiB/7.6 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 88.71cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (2x)
+I170120 17:21:11.846631 46 server/status/runtime.go:228  runtime stats: 62 MiB RSS, 74 goroutines, 12 MiB/6.2 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 69.18cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:21:21.842969 44 gossip/gossip.go:437  [n1] gossip status (ok, 1 node)
+gossip client (0/3 cur/max conns)
+gossip server (0/3 cur/max conns, infos 0/0 sent/received, bytes 0B/0B sent/received)
+I170120 17:21:21.843068 46 server/status/runtime.go:228  runtime stats: 62 MiB RSS, 74 goroutines, 11 MiB/7.8 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 76.33cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (2x)
+E170120 17:21:21.843880 24 storage/queue.go:610  [replicate,n1,s1,r4/1:/Table/1{3-4},@c42030cc00] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:21:21.843978 24 storage/queue.go:610  [replicate,n1,s1,r1/1:/{Min-Table/11},@c42030c000] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:21:21.844705 24 storage/queue.go:610  [replicate,n1,s1,r22/1:/Table/5{1-2},@c42030d500] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:21:21.845282 24 storage/queue.go:610  [replicate,n1,s1,r5/1:/Table/{14-50},@c42030cf00] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:21:21.845905 24 storage/queue.go:610  [replicate,n1,s1,r31/1:/{Table/52-Max},@c420ef8600] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:21:21.846514 24 storage/queue.go:610  [replicate,n1,s1,r3/1:/Table/1{2-3},@c42030c900] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:21:21.847018 24 storage/queue.go:610  [replicate,n1,s1,r21/1:/Table/5{0-1},@c42030d200] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:21:21.847485 24 storage/queue.go:610  [replicate,n1,s1,r2/1:/Table/1{1-2},@c42030c600] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+I170120 17:21:31.843092 46 server/status/runtime.go:228  runtime stats: 62 MiB RSS, 74 goroutines, 9.4 MiB/7.9 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 104.70cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (2x)
+I170120 17:21:41.843441 46 server/status/runtime.go:228  runtime stats: 62 MiB RSS, 74 goroutines, 8.1 MiB/9.7 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 74.60cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:21:51.843156 46 server/status/runtime.go:228  runtime stats: 62 MiB RSS, 74 goroutines, 8.7 MiB/9.2 MiB/29 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 71.30cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (2x)
+I170120 17:22:01.843000 46 server/status/runtime.go:228  runtime stats: 62 MiB RSS, 74 goroutines, 12 MiB/7.0 MiB/30 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 75.70cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:22:11.843075 46 server/status/runtime.go:228  runtime stats: 62 MiB RSS, 74 goroutines, 8.7 MiB/10 MiB/30 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 70.80cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (2x)
+I170120 17:22:21.847438 44 gossip/gossip.go:437  [n1] gossip status (ok, 1 node)
+gossip client (0/3 cur/max conns)
+gossip server (0/3 cur/max conns, infos 0/0 sent/received, bytes 0B/0B sent/received)
+I170120 17:22:21.847583 46 server/status/runtime.go:228  runtime stats: 62 MiB RSS, 74 goroutines, 10 MiB/9.2 MiB/30 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 68.27cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+E170120 17:22:21.848577 24 storage/queue.go:610  [replicate,n1,s1,r5/1:/Table/{14-50},@c42030cf00] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:22:21.849320 24 storage/queue.go:610  [replicate,n1,s1,r31/1:/{Table/52-Max},@c420ef8600] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:22:21.849887 24 storage/queue.go:610  [replicate,n1,s1,r3/1:/Table/1{2-3},@c42030c900] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:22:21.850656 24 storage/queue.go:610  [replicate,n1,s1,r21/1:/Table/5{0-1},@c42030d200] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:22:21.851297 24 storage/queue.go:610  [replicate,n1,s1,r2/1:/Table/1{1-2},@c42030c600] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:22:21.851775 24 storage/queue.go:610  [replicate,n1,s1,r4/1:/Table/1{3-4},@c42030cc00] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:22:21.851832 24 storage/queue.go:610  [replicate,n1,s1,r1/1:/{Min-Table/11},@c42030c000] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:22:21.852294 24 storage/queue.go:610  [replicate,n1,s1,r22/1:/Table/5{1-2},@c42030d500] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+I170120 17:22:31.847406 46 server/status/runtime.go:228  runtime stats: 62 MiB RSS, 74 goroutines, 7.9 MiB/12 MiB/30 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 107.60cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (2x)
+I170120 17:22:41.843308 46 server/status/runtime.go:228  runtime stats: 62 MiB RSS, 74 goroutines, 10 MiB/9.7 MiB/30 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 70.73cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:22:51.843215 46 server/status/runtime.go:228  runtime stats: 62 MiB RSS, 74 goroutines, 8.0 MiB/11 MiB/30 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 77.80cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (2x)
+I170120 17:23:01.843230 46 server/status/runtime.go:228  runtime stats: 62 MiB RSS, 74 goroutines, 9.6 MiB/9.6 MiB/30 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 74.80cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:23:11.843024 46 server/status/runtime.go:228  runtime stats: 62 MiB RSS, 74 goroutines, 10 MiB/8.5 MiB/30 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 81.00cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:23:21.846448 44 gossip/gossip.go:437  [n1] gossip status (ok, 1 node)
+gossip client (0/3 cur/max conns)
+gossip server (0/3 cur/max conns, infos 0/0 sent/received, bytes 0B/0B sent/received)
+I170120 17:23:21.846556 46 server/status/runtime.go:228  runtime stats: 62 MiB RSS, 74 goroutines, 13 MiB/6.0 MiB/30 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 71.87cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+E170120 17:23:21.846792 24 storage/queue.go:610  [replicate,n1,s1,r1/1:/{Min-Table/11},@c42030c000] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:23:21.847599 24 storage/queue.go:610  [replicate,n1,s1,r22/1:/Table/5{1-2},@c42030d500] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:23:21.848239 24 storage/queue.go:610  [replicate,n1,s1,r5/1:/Table/{14-50},@c42030cf00] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:23:21.848890 24 storage/queue.go:610  [replicate,n1,s1,r31/1:/{Table/52-Max},@c420ef8600] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:23:21.849491 24 storage/queue.go:610  [replicate,n1,s1,r3/1:/Table/1{2-3},@c42030c900] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:23:21.850162 24 storage/queue.go:610  [replicate,n1,s1,r21/1:/Table/5{0-1},@c42030d200] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:23:21.850646 24 storage/queue.go:610  [replicate,n1,s1,r2/1:/Table/1{1-2},@c42030c600] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:23:21.851122 24 storage/queue.go:610  [replicate,n1,s1,r4/1:/Table/1{3-4},@c42030cc00] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+I170120 17:23:31.843046 46 server/status/runtime.go:228  runtime stats: 62 MiB RSS, 74 goroutines, 8.8 MiB/9.6 MiB/30 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 137.65cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (2x)
+I170120 17:23:41.844557 46 server/status/runtime.go:228  runtime stats: 62 MiB RSS, 74 goroutines, 10 MiB/9.6 MiB/30 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 63.69cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:23:51.846346 46 server/status/runtime.go:228  runtime stats: 62 MiB RSS, 74 goroutines, 7.4 MiB/12 MiB/30 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 83.28cgo/sec, 0.02/0.00 %(u/s)time, 0.00 %gc (2x)
+I170120 17:24:01.845203 46 server/status/runtime.go:228  runtime stats: 62 MiB RSS, 74 goroutines, 8.5 MiB/11 MiB/30 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 67.21cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:24:11.843132 46 server/status/runtime.go:228  runtime stats: 62 MiB RSS, 74 goroutines, 11 MiB/7.5 MiB/30 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 77.22cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:24:21.843354 44 gossip/gossip.go:437  [n1] gossip status (ok, 1 node)
+gossip client (0/3 cur/max conns)
+gossip server (0/3 cur/max conns, infos 0/0 sent/received, bytes 0B/0B sent/received)
+I170120 17:24:21.843587 46 server/status/runtime.go:228  runtime stats: 62 MiB RSS, 74 goroutines, 10 MiB/8.7 MiB/30 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 77.30cgo/sec, 0.02/0.00 %(u/s)time, 0.00 %gc (1x)
+E170120 17:24:21.844402 24 storage/queue.go:610  [replicate,n1,s1,r4/1:/Table/1{3-4},@c42030cc00] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:24:21.844476 24 storage/queue.go:610  [replicate,n1,s1,r1/1:/{Min-Table/11},@c42030c000] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:24:21.845107 24 storage/queue.go:610  [replicate,n1,s1,r22/1:/Table/5{1-2},@c42030d500] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:24:21.845736 24 storage/queue.go:610  [replicate,n1,s1,r5/1:/Table/{14-50},@c42030cf00] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:24:21.846361 24 storage/queue.go:610  [replicate,n1,s1,r31/1:/{Table/52-Max},@c420ef8600] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:24:21.846938 24 storage/queue.go:610  [replicate,n1,s1,r3/1:/Table/1{2-3},@c42030c900] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:24:21.847415 24 storage/queue.go:610  [replicate,n1,s1,r21/1:/Table/5{0-1},@c42030d200] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:24:21.847846 24 storage/queue.go:610  [replicate,n1,s1,r2/1:/Table/1{1-2},@c42030c600] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+I170120 17:24:31.847509 46 server/status/runtime.go:228  runtime stats: 62 MiB RSS, 74 goroutines, 8.5 MiB/11 MiB/30 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 129.55cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (2x)
+I170120 17:24:41.845420 46 server/status/runtime.go:228  runtime stats: 62 MiB RSS, 74 goroutines, 12 MiB/7.6 MiB/30 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 82.22cgo/sec, 0.02/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:24:51.843223 46 server/status/runtime.go:228  runtime stats: 62 MiB RSS, 74 goroutines, 11 MiB/8.4 MiB/30 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 68.31cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:25:01.844429 46 server/status/runtime.go:228  runtime stats: 62 MiB RSS, 74 goroutines, 8.7 MiB/10 MiB/30 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 78.69cgo/sec, 0.02/0.00 %(u/s)time, 0.00 %gc (2x)
+I170120 17:25:11.844616 46 server/status/runtime.go:228  runtime stats: 62 MiB RSS, 74 goroutines, 9.5 MiB/9.8 MiB/30 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 68.30cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:25:21.847100 44 gossip/gossip.go:437  [n1] gossip status (ok, 1 node)
+gossip client (0/3 cur/max conns)
+gossip server (0/3 cur/max conns, infos 0/0 sent/received, bytes 0B/0B sent/received)
+I170120 17:25:21.847189 46 server/status/runtime.go:228  runtime stats: 62 MiB RSS, 74 goroutines, 11 MiB/8.8 MiB/30 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 77.78cgo/sec, 0.02/0.00 %(u/s)time, 0.00 %gc (1x)
+E170120 17:25:21.847896 24 storage/queue.go:610  [replicate,n1,s1,r3/1:/Table/1{2-3},@c42030c900] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:25:21.848230 24 storage/queue.go:610  [replicate,n1,s1,r21/1:/Table/5{0-1},@c42030d200] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:25:21.848681 24 storage/queue.go:610  [replicate,n1,s1,r2/1:/Table/1{1-2},@c42030c600] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:25:21.848989 24 storage/queue.go:610  [replicate,n1,s1,r4/1:/Table/1{3-4},@c42030cc00] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:25:21.849031 24 storage/queue.go:610  [replicate,n1,s1,r1/1:/{Min-Table/11},@c42030c000] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:25:21.849390 24 storage/queue.go:610  [replicate,n1,s1,r22/1:/Table/5{1-2},@c42030d500] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:25:21.849798 24 storage/queue.go:610  [replicate,n1,s1,r5/1:/Table/{14-50},@c42030cf00] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:25:21.850201 24 storage/queue.go:610  [replicate,n1,s1,r31/1:/{Table/52-Max},@c420ef8600] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+I170120 17:25:31.847469 46 server/status/runtime.go:228  runtime stats: 62 MiB RSS, 74 goroutines, 7.1 MiB/13 MiB/30 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 106.10cgo/sec, 0.02/0.00 %(u/s)time, 0.00 %gc (2x)
+I170120 17:25:41.847559 46 server/status/runtime.go:228  runtime stats: 62 MiB RSS, 74 goroutines, 11 MiB/8.0 MiB/30 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 69.80cgo/sec, 0.02/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:25:51.846564 46 server/status/runtime.go:228  runtime stats: 62 MiB RSS, 74 goroutines, 12 MiB/7.4 MiB/30 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 77.21cgo/sec, 0.02/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:26:01.847498 46 server/status/runtime.go:228  runtime stats: 62 MiB RSS, 74 goroutines, 9.2 MiB/9.8 MiB/30 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 77.79cgo/sec, 0.02/0.00 %(u/s)time, 0.00 %gc (2x)
+I170120 17:26:11.847489 46 server/status/runtime.go:228  runtime stats: 62 MiB RSS, 74 goroutines, 9.8 MiB/9.3 MiB/30 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 79.20cgo/sec, 0.02/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:26:21.847202 44 gossip/gossip.go:437  [n1] gossip status (ok, 1 node)
+gossip client (0/3 cur/max conns)
+gossip server (0/3 cur/max conns, infos 0/0 sent/received, bytes 0B/0B sent/received)
+I170120 17:26:21.847598 46 server/status/runtime.go:228  runtime stats: 62 MiB RSS, 74 goroutines, 7.5 MiB/12 MiB/30 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 110.70cgo/sec, 0.02/0.00 %(u/s)time, 0.00 %gc (2x)
+E170120 17:26:21.848466 24 storage/queue.go:610  [replicate,n1,s1,r31/1:/{Table/52-Max},@c420ef8600] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:26:21.849116 24 storage/queue.go:610  [replicate,n1,s1,r3/1:/Table/1{2-3},@c42030c900] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:26:21.849750 24 storage/queue.go:610  [replicate,n1,s1,r21/1:/Table/5{0-1},@c42030d200] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:26:21.850434 24 storage/queue.go:610  [replicate,n1,s1,r2/1:/Table/1{1-2},@c42030c600] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:26:21.851093 24 storage/queue.go:610  [replicate,n1,s1,r4/1:/Table/1{3-4},@c42030cc00] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:26:21.851165 24 storage/queue.go:610  [replicate,n1,s1,r1/1:/{Min-Table/11},@c42030c000] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:26:21.851702 24 storage/queue.go:610  [replicate,n1,s1,r22/1:/Table/5{1-2},@c42030d500] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:26:21.852154 24 storage/queue.go:610  [replicate,n1,s1,r5/1:/Table/{14-50},@c42030cf00] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:26:22.050780 24 storage/queue.go:677  [n1,replicate] 8 replicas failing with "0 of 1 store with an attribute matching []; likely not enough nodes in cluster"
+I170120 17:26:31.847537 46 server/status/runtime.go:228  runtime stats: 62 MiB RSS, 74 goroutines, 11 MiB/7.5 MiB/30 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 104.70cgo/sec, 0.02/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:26:41.845597 46 server/status/runtime.go:228  runtime stats: 62 MiB RSS, 74 goroutines, 11 MiB/8.3 MiB/30 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 63.71cgo/sec, 0.01/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:26:51.846981 46 server/status/runtime.go:228  runtime stats: 62 MiB RSS, 74 goroutines, 9.8 MiB/9.5 MiB/30 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 70.79cgo/sec, 0.02/0.00 %(u/s)time, 0.00 %gc (2x)
+I170120 17:27:01.845157 46 server/status/runtime.go:228  runtime stats: 62 MiB RSS, 74 goroutines, 7.7 MiB/12 MiB/30 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 79.21cgo/sec, 0.02/0.00 %(u/s)time, 0.00 %gc (2x)
+I170120 17:27:11.847541 46 server/status/runtime.go:228  runtime stats: 62 MiB RSS, 74 goroutines, 8.5 MiB/10 MiB/30 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 71.28cgo/sec, 0.02/0.00 %(u/s)time, 0.00 %gc (2x)
+I170120 17:27:21.847378 44 gossip/gossip.go:437  [n1] gossip status (ok, 1 node)
+gossip client (0/3 cur/max conns)
+gossip server (0/3 cur/max conns, infos 0/0 sent/received, bytes 0B/0B sent/received)
+I170120 17:27:21.847591 46 server/status/runtime.go:228  runtime stats: 63 MiB RSS, 74 goroutines, 10 MiB/9.1 MiB/30 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 68.30cgo/sec, 0.02/0.00 %(u/s)time, 0.00 %gc (1x)
+E170120 17:27:21.848614 24 storage/queue.go:610  [replicate,n1,s1,r22/1:/Table/5{1-2},@c42030d500] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:27:21.849423 24 storage/queue.go:610  [replicate,n1,s1,r5/1:/Table/{14-50},@c42030cf00] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:27:21.850021 24 storage/queue.go:610  [replicate,n1,s1,r31/1:/{Table/52-Max},@c420ef8600] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:27:21.850689 24 storage/queue.go:610  [replicate,n1,s1,r3/1:/Table/1{2-3},@c42030c900] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:27:21.851322 24 storage/queue.go:610  [replicate,n1,s1,r21/1:/Table/5{0-1},@c42030d200] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:27:21.851807 24 storage/queue.go:610  [replicate,n1,s1,r2/1:/Table/1{1-2},@c42030c600] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:27:21.852285 24 storage/queue.go:610  [replicate,n1,s1,r4/1:/Table/1{3-4},@c42030cc00] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 17:27:21.852340 24 storage/queue.go:610  [replicate,n1,s1,r1/1:/{Min-Table/11},@c42030c000] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+I170120 17:27:31.847440 46 server/status/runtime.go:228  runtime stats: 63 MiB RSS, 74 goroutines, 6.9 MiB/13 MiB/30 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 104.10cgo/sec, 0.02/0.00 %(u/s)time, 0.00 %gc (2x)
+I170120 17:27:41.843997 46 server/status/runtime.go:228  runtime stats: 63 MiB RSS, 74 goroutines, 12 MiB/8.2 MiB/30 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 87.23cgo/sec, 0.02/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:27:51.842931 46 server/status/runtime.go:228  runtime stats: 63 MiB RSS, 74 goroutines, 7.1 MiB/12 MiB/30 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 70.71cgo/sec, 0.02/0.00 %(u/s)time, 0.00 %gc (2x)
+I170120 17:28:01.846983 46 server/status/runtime.go:228  runtime stats: 63 MiB RSS, 74 goroutines, 12 MiB/8.0 MiB/30 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 76.27cgo/sec, 0.02/0.00 %(u/s)time, 0.00 %gc (1x)
+I170120 17:28:11.843102 46 server/status/runtime.go:228  runtime stats: 63 MiB RSS, 74 goroutines, 8.0 MiB/11 MiB/30 MiB GO alloc/idle/total, 1.2 MiB/3.2 MiB CGO alloc/total, 77.23cgo/sec, 0.02/0.00 %(u/s)time, 0.00 %gc (2x)
