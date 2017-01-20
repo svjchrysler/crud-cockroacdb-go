@@ -1,0 +1,21 @@
+E170120 16:15:56.688786 121 util/log/clog.go:1003  [config] file created at: 2017/01/20 16:15:56
+E170120 16:15:56.688786 121 util/log/clog.go:1003  [config] running on machine: MBP-de-Jhon
+E170120 16:15:56.688786 121 util/log/clog.go:1003  [config] binary: CockroachDB beta-20170112 (darwin amd64, built 2017/01/20 15:39:54, go1.7.4)
+E170120 16:15:56.688786 121 util/log/clog.go:1003  [config] arguments: [cockroach start --http-port=8000]
+E170120 16:15:56.688786 121 util/log/clog.go:1003  line format: [IWEF]yymmdd hh:mm:ss.uuuuuu goid file:line msg
+E170120 16:15:56.688785 121 storage/queue.go:599  [split,n1,s1,r1/1:/{Min-Table/11},@c420400000] unable to split [n1,s1,r1/1:/{Min-Table/11}] at key "/Table/12/0": key range /Table/12/0-/Table/12/0 outside of bounds of range /Min-/Max
+E170120 16:15:56.689126 122 storage/queue.go:610  [replicate,n1,s1,r1/1:/{Min-Table/11},@c420400000] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 16:15:56.689210 61 storage/queue.go:610  [replicate,n1,s1,r1/1:/{Min-Table/11},@c420400000] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 16:15:56.692592 122 storage/queue.go:610  [replicate,n1,s1,r2/1:/Table/1{1-2},@c4209a0f00] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 16:15:56.692635 61 storage/queue.go:610  [replicate,n1,s1,r1/1:/{Min-Table/11},@c420400000] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 16:15:56.692669 121 storage/queue.go:599  [split,n1,s1,r2/1:/Table/1{1-2},@c4209a0f00] unable to split [n1,s1,r2/1:/Table/1{1-2}] at key "/Table/13/0": key range /Table/13/0-/Table/13/0 outside of bounds of range /Table/11-/Max
+E170120 16:15:56.696151 122 storage/queue.go:610  [replicate,n1,s1,r3/1:/Table/1{2-3},@c420b08300] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 16:15:56.696219 61 storage/queue.go:610  [replicate,n1,s1,r2/1:/Table/1{1-2},@c4209a0f00] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 16:15:56.696241 121 storage/queue.go:599  [split,n1,s1,r3/1:/Table/1{2-3},@c420b08300] unable to split [n1,s1,r3/1:/Table/1{2-3}] at key "/Table/14/0": key range /Table/14/0-/Table/14/0 outside of bounds of range /Table/12-/Max
+E170120 16:15:56.696262 61 storage/queue.go:610  [replicate,n1,s1,r1/1:/{Min-Table/11},@c420400000] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 16:15:56.700860 122 storage/queue.go:610  [replicate,n1,s1,r4/1:/Table/1{3-4},@c420811200] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 16:15:56.700906 61 storage/queue.go:610  [replicate,n1,s1,r3/1:/Table/1{2-3},@c420b08300] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 16:15:56.700939 122 storage/queue.go:610  [replicate,n1,s1,r5/1:/{Table/14-Max},@c420b08000] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 16:15:56.700979 61 storage/queue.go:610  [replicate,n1,s1,r2/1:/Table/1{1-2},@c4209a0f00] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 16:15:56.701054 61 storage/queue.go:610  [replicate,n1,s1,r1/1:/{Min-Table/11},@c420400000] purgatory: 0 of 1 store with an attribute matching []; likely not enough nodes in cluster
+E170120 16:16:01.846459 1 cli/start.go:438  received signal 'interrupt' during shutdown, initiating hard shutdown

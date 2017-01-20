@@ -1,0 +1,5 @@
+W170120 16:15:45.859826 1 util/log/clog.go:1003  [config] file created at: 2017/01/20 16:15:45
+W170120 16:15:45.859826 1 util/log/clog.go:1003  [config] running on machine: MBP-de-Jhon
+W170120 16:15:45.859826 1 util/log/clog.go:1003  [config] binary: CockroachDB beta-20170112 (darwin amd64, built 2017/01/20 15:39:54, go1.7.4)
+W170120 16:15:45.859826 1 util/log/clog.go:1003  [config] arguments: [cockroach start]
+W170120 16:15:45.859826 1 util/log/clog.go:1003  line format: [IWEF]yymmdd hh:mm:ss.uuuuuu goid file:line msg
